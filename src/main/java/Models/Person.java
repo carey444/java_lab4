@@ -3,7 +3,6 @@ package Models;
 import java.time.LocalDate;
 
 public class Person {
-
     private long id;
     private String name;
     private String gender;
