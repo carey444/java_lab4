@@ -5,8 +5,14 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+* Класс для тестов для проверки логики парсинга данных
+ */
 public class ParserTest {
 
+    /*
+    * проверяет корректность преобразования зарплаты из строки в число
+     */
     @Test
     void testParseSalary() {
         String salary = "4800";
@@ -15,6 +21,9 @@ public class ParserTest {
         assertEquals(4800, result);
     }
 
+    /*
+    *проверяет корректность парсинга даты рождения
+     */
     @Test
     void testParseDate() {
         String date = "15.05.1970";
@@ -29,6 +38,9 @@ public class ParserTest {
         assertEquals(15, parsed.getDayOfMonth());
     }
 
+    /*
+    * проверяет корректность группировки подразделений
+     */
     @Test
     void testDepartmentCache() {
 

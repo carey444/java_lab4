@@ -11,8 +11,18 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+/*
+* Главный класс приложения, который
+* выполняет чтение csv-файла, парсит данные о людях
+* и создает обьекты Person и группировку подразделений Department
+ */
 public class Main {
 
+    /*
+    * точка входа в программу
+    * читает csv файл из ресурсов, преобразует строки в обьекты Person
+    * и выводит результат в консоль
+     */
     public static void main(String[] args) {
 
         List<Person> people = new ArrayList<>();
